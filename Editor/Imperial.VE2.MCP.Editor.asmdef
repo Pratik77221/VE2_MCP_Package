@@ -1,9 +1,7 @@
 {
   "name": "Imperial.VE2.MCP.Editor",
   "rootNamespace": "Imperial.VE2.MCP.Editor",
-  "references": [
-    "GUID:2aae799fca8f4493ca5058f7a1210dd1"
-  ],
+  "references": [],
   "includePlatforms": [
     "Editor"
   ],

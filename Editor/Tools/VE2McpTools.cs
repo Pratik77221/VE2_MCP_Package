@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using Unity.AI.MCP.Editor.Helpers;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;

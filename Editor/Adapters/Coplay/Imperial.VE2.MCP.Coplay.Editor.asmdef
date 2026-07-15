@@ -1,0 +1,29 @@
+{
+  "name": "Imperial.VE2.MCP.Coplay.Editor",
+  "rootNamespace": "Imperial.VE2.MCP.Editor.Adapters.Coplay",
+  "references": [
+    "Imperial.VE2.MCP.Editor",
+    "MCPForUnity.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "Newtonsoft.Json.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "VE2_MCP_COPLAY"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.coplaydev.unity-mcp",
+      "expression": "0.0.0",
+      "define": "VE2_MCP_COPLAY"
+    }
+  ],
+  "noEngineReferences": false
+}

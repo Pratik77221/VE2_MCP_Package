@@ -1,15 +1,17 @@
 {
   "name": "com.imperial.ve2.mcp",
   "displayName": "ViRSE 2 Unity MCP Extension",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "unity": "6000.0",
   "unityRelease": "60f1",
-  "description": "Registers ViRSE 2 (VE2) specific tools with Unity MCP so AI agents can configure VE2 projects from Unity without a separate Node server.",
-  "dependencies": {
-    "com.unity.ai.assistant": "2.12.0-pre.2"
-  },
-  "documentationUrl": "README.md",
+  "description": "Registers ViRSE 2 (VE2) tools with either Unity AI MCP or Coplay MCP for Unity through optional adapters backed by one VE2-aware core.",
+  "dependencies": {},
+  "documentationUrl": "https://github.com/Pratik77221/VE2_MCP_Package#readme",
   "changelogUrl": "CHANGELOG.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pratik77221/VE2_MCP_Package.git"
+  },
   "keywords": [
     "Imperial",
     "ViRSE",
@@ -17,6 +19,7 @@
     "Unity",
     "MCP",
     "VR",
-    "AI"
+    "AI",
+    "Coplay"
   ]
 }
