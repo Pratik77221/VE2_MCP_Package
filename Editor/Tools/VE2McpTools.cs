@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 
 namespace Imperial.VE2.MCP.Editor
 {
-    public static class VE2McpTools
+    public static partial class VE2McpTools
     {
         private static readonly Dictionary<string, string> ProviderResources = new()
         {
@@ -806,6 +806,14 @@ namespace Imperial.VE2.MCP.Editor
             if (compileState.scriptCompilationFailed == true)
             {
                 errors.Add("Unity reports script compilation failures. Fix compile errors before building or uploading.");
+            }
+
+            var sceneVe2ApiInstances = VE2Reflection.FindComponentsByTypeName("VE2.Common.API.VE2API")
+                .Where(component => component != null && component.gameObject.scene == scene)
+                .ToArray();
+            if (sceneVe2ApiInstances.Length > 0)
+            {
+                errors.Add($"Found {sceneVe2ApiInstances.Length} VE2API scene instance(s). VE2 creates VE2API at runtime; remove scene instances before building.");
             }
 
             var providerSummary = BuildProviderSummary();

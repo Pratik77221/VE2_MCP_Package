@@ -87,7 +87,7 @@ namespace Imperial.VE2.MCP.Editor
                 var keepFirst = true;
                 foreach (var entry in clash.entries)
                 {
-                    var go = EditorUtility.InstanceIDToObject(entry.instanceID) as GameObject;
+                    var go = EditorUtility.EntityIdToObject((EntityId)entry.instanceID) as GameObject;
                     if (go == null)
                     {
                         continue;

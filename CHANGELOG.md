@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 0.3.0
+
+- Expanded both Unity AI and Coplay adapters from 18 to 54 matching VE2 tools.
+- Added official-prefab authoring and serialized configuration for activatables, adjustables, InfoPoints, interaction events, safe interactable duplication, teleport anchors, player settings, and networked objects.
+- Added Play Mode tools for VE2 player movement, clients, interaction state, activatables, adjustables, network spawning/despawning, sync snapshots, and multiplayer smoke testing.
+- Added bounded VE2 public-API search, interface source lookup, prefab contracts, scene manifests, public-interface script scaffolds, and plugin-script validation.
+- Added guarded reflection-based integration with VE2's own plugin builder and uploader for export, status, version scans, upload, and cancellation. Build and upload operations require explicit confirmation.
+- Added native Coplay MCP resources for installed VE2 public interfaces, the active scene manifest, and the VE2 prefab catalog.
+- Added an asynchronous editor update loop for VE2 remote scans/uploads so no VE2 window interaction or terminal command is required.
+
 ## 0.2.0
 
 - Split the package into a host-neutral VE2 editor core and optional Unity AI and Coplay MCP adapters.
